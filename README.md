@@ -1,8 +1,10 @@
 # Git, GitHub, and Contributing to Open Source
 This is a rough template for what [Scott Hanselman](https://github.com/shanselman) and I are teaching at the Women Who Code workshop on July 19th, 2016. All pull requests or issues to improve it are welcome :).
 
-## Setup
-## Creating a GitHub account
+*Dislaimer: This is still a WIP.*
+
+## Git/GitHub
+### Creating a GitHub account
 Head over to https://github.com/join?source=header-home and create an account.
 
 ### Getting git
@@ -35,17 +37,19 @@ git config --list
 Say you want to pull down Intel Snap, you would go to the github page, https://github.com/intelsdi-x/snap, click clone or download, pick HTTPS or SSH and copy the link. For HTTPS you can just add .git to the URL `https://github.com/intelsdi-x/snap.git`.
 ![git-clone](https://cloud.githubusercontent.com/assets/12282848/16968258/8f066e18-4dc2-11e6-9171-92b4b76f8590.png)
 
-After copying the link, go to the path you want to clone this to. For organization it 
+After copying the link, go to the path you want to clone this to. For organization it is more clear when there are separate directories for different repo owners.
 
 ### Creating your own repository
 Go to GitHub and click the button `new repository`. This is what mine looks like:
 ![new-repo](https://cloud.githubusercontent.com/assets/12282848/16969555/79445e48-4dca-11e6-83ce-33a358caa4a5.png)
+
 After clicking it you get to pick a title for your repo, decide if you want to make it public or private (this costs money), adding a license, and whether you want to have a [.gitignore](https://git-scm.com/docs/gitignore) file.
-![create-new-repo](https://cloud.githubusercontent.com/assets/12282848/16969577/8f26101c-4dca-11e6-9916-8a8560c55f24.png) 
+![create-new-repo](https://cloud.githubusercontent.com/assets/12282848/16969577/8f26101c-4dca-11e6-9916-8a8560c55f24.png)
+
 After you create it, you can then go to your terminal to add either an existing git repo, or you can turn a directory into one.
 ![quick-setup](https://cloud.githubusercontent.com/assets/12282848/16969553/73f22560-4dca-11e6-9f4e-d1a8657ac5ab.png)
 
-#### Adding content to your new repo
+### Adding content to your new repo
 Let's assume you haven't created your content yet. 
 
 You can either:
@@ -92,6 +96,12 @@ git push --force # This is risky though because it overwrites what you had so ma
 ### Making a new branch
 Say you want to make changes on a branch other than master. This is common when wanting to separate different changes. If you want to have the exact 
 
+### Pulling down new content
+* `git fetch`: fetches the changes, but doesn't merge them
+* `git pull`: does `git fetch` and `git merge`. This results in an [extra commit](https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase). 
+* `git pull --rebase`: leaves your commits in a straight line without branches
+
+## Contributing to Open Source
 ### Creating an Issue
 Click the button at the top that says "Issues" and then the green button to the right.
 ![create-issue](https://cloud.githubusercontent.com/assets/12282848/16970455/112131a4-4dd1-11e6-890b-697903e9b94b.png)
@@ -103,12 +113,7 @@ If the pull request (PR) is to fix an exisiting issue, you can reference it by `
 
 *Tip: Include the issue the PR fixes in the commit message and have descriptive messages.*
 
-### Pulling down new content
-* `git fetch`: fetches the changes, but doesn't merge them
-* `git pull`: does `git fetch` and `git merge`. This results in an [extra commit](https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase). 
-* `git pull --rebase`: leaves your commits in a straight line without branches
-
-## Contributing to Open Source
+### Resources
 Great websites for people who are new to coding/contributing to open source:
 * [Code Newbie](http://www.codenewbie.org/)
 * [Get involved in tech](http://www.getinvolvedintech.com)
