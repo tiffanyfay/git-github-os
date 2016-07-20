@@ -119,3 +119,4 @@ Great websites for people who are new to coding/contributing to open source:
 * [Official git documentation](https://git-scm.com/doc)
 * [GitHub's Hello-World](https://guides.github.com/activities/hello-world/)
 * [Brent Beer's OSCON talk: Everything I wish I knew when I started using GitHub](https://www.youtube.com/watch?v=KDUtjZHIx44)
+* [SWDB-2015 Git and GitHub tutorial](https://github.com/AllenBrainAtlas/SWDB-2015/blob/master/presentations/git/tutorial.ipynb)
