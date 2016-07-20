@@ -1,7 +1,7 @@
 # Git, GitHub, and Contributing to Open Source
 This is a rough template for what [Scott Hanselman](https://github.com/shanselman) and I are teaching at the Women Who Code workshop on July 19th, 2016. All pull requests or issues to improve it are welcome :).
 
-*Dislaimer: This is still a WIP.*
+*Disclaimer: This is still a WIP.*
 
 # Contents
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
@@ -70,16 +70,16 @@ After you create it, you can then go to your terminal to add either an existing 
 ![quick-setup](https://cloud.githubusercontent.com/assets/12282848/16969553/73f22560-4dca-11e6-9f4e-d1a8657ac5ab.png)
 
 ### Adding content to your new repo
-Let's assume you haven't created your content yet. 
+Let's assume you haven't created your content yet.
 
 You can either:
-Clone your new repository with the first link shown, so 
+Clone your new repository with the first link shown, so
 ```
 git clone https://github.com/tiffanyfj/git-github-os.git
 ```
 
 Or
-create a directory locally on your machine, create a directory with the same name that you used to create the GitHub repository. If you do it this way, you need to run 
+create a directory locally on your machine, create a directory with the same name that you used to create the GitHub repository. If you do it this way, you need to run
 ```sh
 git init # this initializes your directory as a git repo
 git remote add origin https://github.com/tiffanyfj/git-github-os.git
@@ -95,18 +95,18 @@ origin	https://github.com/tiffanyfj/git-github-os.git (fetch)
 origin	https://github.com/tiffanyfj/git-github-os.git (push)
 ```
 
-Make some files, say README.md. Add something to the README. Then add the file and make a commit. When creating this repository I created a directory on my machine in the path `github.com/tiffanyfj/git-github-os`. Then I created this README and added some content. 
+Make some files, say README.md. Add something to the README. Then add the file and make a commit. When creating this repository I created a directory on my machine in the path `github.com/tiffanyfj/git-github-os`. Then I created this README and added some content.
 ```sh
 git add README.md # if you do . instead of README.md, it adds all files in the directory
-git commit -m "Inital readme commit"
+git commit -m "Initial readme commit"
 git push -u origin master # if you cloned, you just need to do git push
 ```
 
-Now if you go refresh your respository on github.com, your commit with your README.md should be there.
+Now if you go refresh your repository on github.com, your commit with your README.md should be there.
 
 If you decide to make changes you can make a new commit with the changes by doing the previous `git add` and `git commit lines` or use `git commit -am "Message goes here"` which does the two commands in one line. Then do a `git push`.
 
-Or if you want to add your new changes to the same commit you can do 
+Or if you want to add your new changes to the same commit you can do
 ```sh
 git add README.md
 git commit --amend --no-edit
@@ -114,11 +114,11 @@ git push --force # This is risky though because it overwrites what you had so ma
 ```
 
 ### Making a new branch
-Say you want to make changes on a branch other than master. This is common when wanting to separate different changes. If you want to have the exact 
+Say you want to make changes on a branch other than master. This is common when wanting to separate different changes. If you want to have the exact
 
 ### Pulling down new content
 * `git fetch`: fetches the changes, but doesn't merge them
-* `git pull`: does `git fetch` and `git merge`. This results in an [extra commit](https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase). 
+* `git pull`: does `git fetch` and `git merge`. This results in an [extra commit](https://coderwall.com/p/7aymfa/please-oh-please-use-git-pull-rebase).
 * `git pull --rebase`: leaves your commits in a straight line without branches
 
 ## Contributing to Open Source
@@ -129,7 +129,7 @@ Click the button at the top that says "Issues" and then the green button to the 
 ### Creating a Pull Request
 Click the button at the top that says "Pull Requests" and then the green button to the right.
 ![create-pr](https://cloud.githubusercontent.com/assets/12282848/16970458/128818aa-4dd1-11e6-9388-f27a7106cb4e.png)
-If the pull request (PR) is to fix an exisiting issue, you can reference it by `#somenumber`, e.g. `#2`. It's common to say "Fixes #somenumber" so when the PR is merged, it closes the corresponding issue.
+If the pull request (PR) is to fix an existing issue, you can reference it by `#somenumber`, e.g. `#2`. It's common to say "Fixes #somenumber" so when the PR is merged, it closes the corresponding issue.
 
 *Tip: Include the issue the PR fixes in the commit message and have descriptive messages.*
 
@@ -140,8 +140,12 @@ Great websites for people who are new to coding/contributing to open source:
 * [First timers only](http://www.firsttimersonly.com/)
 * [Your first PR](https://twitter.com/yourfirstpr)
 
-## Some Git/GitHub resources
+## Some Git/GitHub Resources
 * [Official git documentation](https://git-scm.com/doc)
 * [GitHub's Hello-World](https://guides.github.com/activities/hello-world/)
 * [Brent Beer's OSCON talk: Everything I wish I knew when I started using GitHub](https://www.youtube.com/watch?v=KDUtjZHIx44)
 * [SWDB-2015 Git and GitHub tutorial](https://github.com/AllenBrainAtlas/SWDB-2015/blob/master/presentations/git/tutorial.ipynb)
+* [Start Learning Git and GitHub Today with Self-Paced Training](https://github.com/blog/2083-start-learning-git-and-github-today-with-self-paced-training)
+
+## Contributing to an Open Source Project  
+* [Course from egghead.io: How to Contribute to an Open Source Project on GitHub](https://egghead.io/courses/how-to-contribute-to-an-open-source-project-on-github)
