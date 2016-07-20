@@ -3,6 +3,26 @@ This is a rough template for what [Scott Hanselman](https://github.com/shanselma
 
 *Dislaimer: This is still a WIP.*
 
+# Contents
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [Git, GitHub, and Contributing to Open Source](#git-github-and-contributing-to-open-source)
+	- [Git/GitHub](#gitgithub)
+		- [Creating a GitHub account](#creating-a-github-account)
+		- [Getting git](#getting-git)
+		- [Initial git setup](#initial-git-setup)
+			- [Config](#config)
+		- [Getting an existing repository](#getting-an-existing-repository)
+		- [Creating your own repository](#creating-your-own-repository)
+		- [Adding content to your new repo](#adding-content-to-your-new-repo)
+		- [Making a new branch](#making-a-new-branch)
+		- [Pulling down new content](#pulling-down-new-content)
+	- [Contributing to Open Source](#contributing-to-open-source)
+		- [Creating an Issue](#creating-an-issue)
+		- [Creating a Pull Request](#creating-a-pull-request)
+		- [Resources](#resources)
+	- [Some Git/GitHub resources](#some-gitgithub-resources)
+
 ## Git/GitHub
 ### Creating a GitHub account
 Head over to https://github.com/join?source=header-home and create an account.
